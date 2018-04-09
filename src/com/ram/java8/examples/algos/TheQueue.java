@@ -35,7 +35,7 @@ public class TheQueue {
 
             numberOfItems++;
 
-            System.out.println("INSERT " + input + " Was Added to the Stack\n");
+            System.out.println("INSERT " + input + " Was Added to the Queue\n");
 
         } else {
 

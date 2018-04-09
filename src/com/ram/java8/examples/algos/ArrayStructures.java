@@ -7,35 +7,23 @@ public class ArrayStructures {
     private int arraySize = 10;
 
     public void generateRandomArray(){
-
         for(int i = 0; i < arraySize; i++){
-
             theArray[i] = (int)(Math.random()*10)+10;
-
         }
-
     }
 
     public void printArray(){
-
         System.out.println("----------");
         for(int i = 0; i < arraySize; i++){
-
             System.out.print("| " + i + " | ");
             System.out.println(theArray[i] + " |");
-
             System.out.println("----------");
-
         }
-
     }
 
     public int getValueAtIndex(int index){
-
         if(index < arraySize) return theArray[index];
-
         return 0;
-
     }
 
     public boolean doesArrayContainThisValue(int searchValue){
@@ -184,7 +172,6 @@ public class ArrayStructures {
     // smallest to largest
 
     public void bubbleSort(){
-
         // i starts at the end of the Array
         // As it is decremented all indexes greater
         // then it are sorted
@@ -197,21 +184,13 @@ public class ArrayStructures {
             // swapped
 
             for(int j = 0; j < i; j++){
-
                 // To change sort to Descending change to <
-
                 if(theArray[j] > theArray[j + 1]){
-
                     swapValues(j, j+1);
-
                     printHorzArray(i, j);
-
                 }
-
             }
-
         }
-
     }
 
     public void swapValues(int indexOne, int indexTwo){
